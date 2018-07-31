@@ -1,11 +1,8 @@
-<footer id="footer">
-  <% if (theme.sidebar === 'bottom'){ %>
-    <%- partial('_partial/sidebar') %>
-  <% } %>
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
-      <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      &copy; <%= date(new Date(), 'YYYY') %> - <%= config.author || config.title %>.<br>
+      <%= __('powered_by') %> <a href="https://github.com/lhas2" target="_blank">@lhas</a> <%= __('using') %> <a href="https://hexo.io" target="_blank">Hexo</a> <%= __('and') %> <a href="https://bulma.io" target="_blank">Bulma</a>.
+    </p>
   </div>
 </footer>
