@@ -29,6 +29,7 @@
 </div>
 
 <% if (page.total > 1){ %>
+<div class="container">
   <nav id="page-nav">
     <% var prev_text = "&laquo; " + __('prev');var next_text = __('next') + " &raquo;"%>
     <%- paginator({
@@ -36,4 +37,5 @@
       next_text: next_text
     }) %>
   </nav>
+</div>
 <% } %>

@@ -1,7 +1,7 @@
 <% if(!index){ %>
   <div class="section"><div class="container">
 <% } %>
-<div class="card">
+<div class="card <% if(index) { %>card--hover<% } %>">
   <div class="card-content">
     <%- partial('post/gallery') %>
     <div class="media">
