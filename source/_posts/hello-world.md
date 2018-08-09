@@ -1,38 +1,20 @@
 ---
-title: Hello World
+title: Olá, mundo! Do inglês, Hello World!
+cover: /covers/hello-world.jpg
+author: lhas
+date: 2016-07-13 02:10:28
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+Este é o primeiro post do blog da 0e1dev.
+<!-- more -->
+## O que é a 0e1dev?
 
-### Create a new post
+Uma startup que trabalha com desenvolvimento de novas tecnologias para o meio digital. Redes sociais, aplicativos, lojas virtuais, etc.
 
-``` bash
-$ hexo new "My New Post"
-```
+Ela é mantida através da parceria com outras empresas do mesmo ramo como a [Green Comunicação](http://greencomunicacao.com.br).
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+Quem está postando no blog sou eu @lhas! Vocês podem acompanhar meu [Github](https://github.com/lhas).
 
-### Run server
+A ideia é escrever sobre tecnologias novas que nós estamos trabalhando aqui. O foco principal será JavaScript (tanto back-end quanto front-end).
 
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+Espero que gostem! :-)

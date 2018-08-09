@@ -1,18 +1,10 @@
 <%- partial('_partial/head') %>
 <body class="has-navbar-fixed-top">
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section class="section">
-          <div class="container">
-            <%- body %>
-          </div>
-        </section>
-      </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-    </div>
-    <%- partial('_partial/after-footer') %>
+  <div id="container" class="sticky-container">
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <%- body %>
   </div>
+  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/after-footer') %>
 </body>
 </html>

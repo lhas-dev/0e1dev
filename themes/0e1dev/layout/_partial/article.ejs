@@ -1,73 +1,25 @@
-<div class="is-6">
-  <section class="section">
-      <div class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image  is-48x48">
-                <img class="is-rounded" src="https://avatars2.githubusercontent.com/u/41020086?s=460&v=4" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Nome do post</p>
-              <p class="subtitle is-6">@lhas</p>
-            </div>
-          </div>
-
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-            <a href="#">#css</a> <a href="#">#responsive</a>
-            <br>
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-          </div>
-        </div>
-      </div>
-  </section>
-</div>
-
-<!--
-<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
-  </div>
-  <div class="article-inner">
+<% if(!index){ %>
+  <div class="section"><div class="container">
+<% } %>
+<div class="card">
+  <div class="card-content">
     <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
-      <header class="article-header">
+    <div class="media">
+      <div class="media-content">
         <%- partial('post/title', {class_name: 'article-title'}) %>
-      </header>
-    <% } %>
-    <div class="article-entry" itemprop="articleBody">
+      </div>
+    </div>
+
+    <div class="content">
       <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
+      <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-          </p>
+          <a class="button is-flat card__cta" href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
         <% } %>
       <% } else { %>
-        <%- post.content %>
-      <% } %>
+      <%- post.content %>
+    <% } %>
     </div>
-    <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
-      <% } %>
-      <%- partial('post/tag') %>
-    </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
-</article>
-
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>-->
+</div>
+<% if(!index) { %></div></div><% } %>
