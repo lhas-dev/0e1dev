@@ -55,3 +55,20 @@ body {
     font-weight: bold;
     color: rgba(0,0,0,0.8);
 }
+
+.navbar {
+    box-shadow:rgba(145, 144, 144, 0.0359) 0px 15px 15px 0px;
+}
+
+.footer {
+    padding: 0 !important;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer a {
+    color: rgba(0,0,0,0.8);
+    text-decoration: underline;
+    font-style: italic;
+}
