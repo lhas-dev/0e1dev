@@ -8,8 +8,8 @@
       <a class="has-text-dark <%= class_name %>" href="<%- url_for(post.path) %>"><%= post.title %></a>
     </h2>
   <% } else { %>
-    <h2 class="title is-4 has-text-dark <%= class_name %>" itemprop="name">
+    <h1 class="title is-2 has-text-dark <%= class_name %>" itemprop="name">
       <%= post.title %>
-    </h2>
+    </h1>
   <% } %>
 <% } %>

@@ -12,10 +12,7 @@ const macy = Macy.init({
         1100: {
             columns: 3,
         },
-        1300: {
-            columns: 4,
-        },
-        }
+    }
 });
 
 window.onload = function() {
