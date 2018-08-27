@@ -3,12 +3,12 @@ tags:
   - CRUD
   - firebase
   - react
-cover: /covers/adicionando-lendo-e-observando-dados-no-firebase-react.png
+cover: cover.png
 author: lhas
 date: 2018-03-18 18:26:12
 ---
 Aprenda como trabalhar com o Realtime Database do Firebase. O Firebase é uma solução do Google para startups, que desejam entregar recursos em tempo real em tempo recorde.
-<!-- more -->
+
 Olá a todos!
 
 Hoje iremos aprender como trabalhar com o Firebase junto do React.

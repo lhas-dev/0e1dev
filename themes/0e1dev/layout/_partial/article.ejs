@@ -3,22 +3,23 @@
 <% } %>
 <div class="card <% if(index) { %>card--hover<% } %>">
   <div class="card-content">
-    <%- partial('post/gallery') %>
     <div class="media">
       <div class="media-content">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        <%- partial('post/title', {class_name: 'article-title', date_format: 'DD/MM/YYYY'}) %>
       </div>
     </div>
+    <%- partial('post/gallery') %>
 
     <div class="content">
-      <% if (post.excerpt && index){ %>
-      <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <a class="button is-flat card__cta" href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        <% } %>
+      <% if (!index){ %>
+        <%- post.content %>
       <% } else { %>
-      <%- post.content %>
-    <% } %>
+      <% post.tags.data.map(function(tag) { %>
+        <span class="tag">
+        <%- tag.name %>
+      </span>
+      <% }) %>
+      <% } %>
     </div>
   </div>
 </div>

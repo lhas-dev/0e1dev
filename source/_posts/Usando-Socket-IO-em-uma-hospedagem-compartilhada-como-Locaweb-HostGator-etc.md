@@ -4,11 +4,10 @@ title: >-
   etc)
 date: 2016-07-14 02:10:28
 tags: ["node.js", "socket.io", "hospedagem compartilhada", "vps", "digitalocean"]
-cover: /covers/usando-socket-io-em-uma-hospedagem-compartilhada-como-locaweb-hostgator-etc.jpg
-author: lhas
+cover: cover.jpg
+share_cover: /2016/07/14/Usando-Socket-IO-em-uma-hospedagem-compartilhada-como-Locaweb-HostGator-etc/cover.jpg
 ---
-Que tal aprender uma técnica para utilizar a tecnologia de WebSockets em hospedagens compartilhadas?
-<!-- more -->
+
 Hoje vou ensinar como trabalhar com o Socket.IO para transformar sua aplicação web em tempo real.
 
 # O que é Socket.IO?

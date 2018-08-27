@@ -1,12 +1,12 @@
 ---
 title: Olá, mundo! Do inglês, Hello World!
-cover: /covers/hello-world.jpg
+cover: capa.jpg
 author: lhas
 date: 2016-07-13 02:10:28
 ---
 
 Este é o primeiro post do blog da 0e1dev.
-<!-- more -->
+
 ## O que é a 0e1dev?
 
 Uma startup que trabalha com desenvolvimento de novas tecnologias para o meio digital. Redes sociais, aplicativos, lojas virtuais, etc.

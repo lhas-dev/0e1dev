@@ -1,12 +1,12 @@
 const macy = Macy.init({
     container: '#masonry',
     margin: 30,
-    columns: 3,
+    columns: 4,
     breakAt: {
         460: {
             columns: 1,
         },
-        960: {
+        860: {
             columns: 2,
         },
         1100: {

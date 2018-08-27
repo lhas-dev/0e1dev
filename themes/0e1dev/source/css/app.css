@@ -60,6 +60,18 @@ body {
 .navbar {
     box-shadow:rgba(145, 144, 144, 0.0359) 0px 15px 15px 0px;
 }
+.navbar-item img {
+    max-height: 2.5rem;
+}
+.navbar-item:hover {
+    color: #007d92 !important;
+}
+.navbar .button.is-white:hover {
+    color: #007d92 !important;
+}
+.has-text-primary {
+    color: #007d92 !important;
+}
 
 
 /* Footer */

@@ -2,7 +2,10 @@
   <div class="content has-text-centered">
     <p>
       2010-<%= date(new Date(), 'YYYY') %> &copy; <%= config.author || config.title %>, vulgo, <a href="https://github.com/lhas2" target="_blank">@lhas</a>.<br>
-      <%= __('using') %> <a href="https://hexo.io" target="_blank">Hexo</a> <%= __('and') %> <a href="https://bulma.io" target="_blank">Bulma</a>.
+      <%= __('using') %> <a href="https://hexo.io" target="_blank">Hexo</a>, <a href="https://bulma.io" target="_blank">Bulma</a> <%= __('and') %> <a href="https://netlify.com" target="_blank">Netlify</a>.
     </p>
+    <a href="<%- url_for() %>" title="<%= config.title %>">
+      <img src="/img/logo-preto.svg" alt="<%= config.title %>" width="110" height="50">
+    </a>
   </div>
 </footer>
