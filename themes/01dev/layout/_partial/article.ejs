@@ -1,26 +1,73 @@
-<% if(!index){ %>
-  <div class="section"><div class="container">
-<% } %>
-<div class="card <% if(index) { %>card--hover<% } %>">
-  <div class="card-content">
-    <div class="media">
-      <div class="media-content">
-        <%- partial('post/title', {class_name: 'article-title', date_format: 'DD/MM/YYYY'}) %>
-      </div>
-    </div>
-    <%- partial('post/gallery') %>
+    <% if(index) { %>
+      
+      <div class="card <% if(index) { %>card--hover<% } %>">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <%- partial('post/title', {class_name: 'article-title', date_format: 'DD/MM/YYYY'}) %>
+            </div>
+          </div>
+          <% if (index) { %>
+            <%- partial('post/gallery') %>
+          <% } %>
 
-    <div class="content">
-      <% if (!index){ %>
-        <%- post.content %>
-      <% } else { %>
-      <% post.tags.data.map(function(tag) { %>
-        <span class="tag">
-        <%- tag.name %>
-      </span>
-      <% }) %>
-      <% } %>
+          <div class="content">
+            <% if (!index){ %>
+              <%- post.content %>
+            <% } else { %>
+            <% post.tags.data.map(function(tag) { %>
+              <span class="tag">
+              <%- tag.name %>
+            </span>
+            <% }) %>
+            <% } %>
+          </div>
+        </div>
+      </div>
+
+    <% } else { %>
+
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <%= post.title %>
+          </h1>
+          <h2 class="subtitle">
+            Escrito por @lhas em <%= date(post.date, 'DD/MM/YYYY') %>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+  <div class="section">
+    <div class="container">
+
+          <% if (index) { %>
+            <%- partial('post/gallery') %>
+          <% } %>
+
+          <div class="content content--post">
+            <% if (!index){ %>
+              <%- post.content %>
+            <% } else { %>
+            <% post.tags.data.map(function(tag) { %>
+              <span class="tag">
+              <%- tag.name %>
+            </span>
+            <% }) %>
+            <% } %>
+          </div>
+
     </div>
   </div>
-</div>
-<% if(!index) { %></div></div><% } %>
+  <% } %>
+
+
+<% if (!index && post.comments && config.disqus_shortname){ %>
+<section id="comments" class="section">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+<% } %>

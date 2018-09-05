@@ -73,6 +73,26 @@ body {
     color: #007d92 !important;
 }
 
+.hero.is-primary {
+    background: linear-gradient(141deg,#007d92 0,#00a396 100%) !important;
+}
+
+/* Comments */
+#comments {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Article */
+.card {
+    box-shadow: #e9e9e9 0px 10px 10px 0px;
+}
+.content--post h1,
+.content--post h2,
+.content--post h3,
+.content--post h4 {
+    color: #007d92;
+}
 
 /* Footer */
 .footer {

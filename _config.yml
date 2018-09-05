@@ -79,3 +79,5 @@ theme: 01dev
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+disqus_shortname: 0e1dev
