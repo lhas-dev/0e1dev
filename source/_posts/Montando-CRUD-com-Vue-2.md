@@ -419,7 +419,7 @@ O filho, *Create*, precisa avisar seu pai, o *Index*, que ele fez alguma coisa.
 
 Faremos este aviso através dos **Eventos**.
 
-![](http://berb.github.io/nodejs-talk-chaosseminar/assets/images/memes/ya_callback.jpg)
+![](https://berb.github.io/nodejs-talk-chaosseminar/assets/images/memes/ya_callback.jpg)
 *Cuidado com o [Callback Hell](http://callbackhell.com/)!*
 
 Caso uma nova aula seja adicionada com sucesso, precisamos emitir um evento indicando mudanças, que chamarei de **created**.
