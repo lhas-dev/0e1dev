@@ -59,10 +59,10 @@ class DashboardContainer extends React.Component {
     };
 
     async componentDidMount() {
-        const products = await axios.get('/api/products'); // vamos usar async/await para facilitar o entendimento
+        const request = await axios.get('/api/products'); // vamos usar async/await para facilitar o entendimento
 
         this.setState({
-            products
+            products: request.data
         });
     }
 
