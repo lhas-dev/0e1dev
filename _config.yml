@@ -39,7 +39,7 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace:
@@ -81,3 +81,7 @@ deploy:
   type:
 
 disqus_shortname: 0e1dev
+
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'solarizedlight'

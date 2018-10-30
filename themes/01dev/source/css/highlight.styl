@@ -15,6 +15,12 @@ article-padding = 1
 font-size = 17px
 line-height = 1.25
 
+code[class*="language-"], pre[class*="language-"]
+  font-weight: normal !important
+
+.number
+  padding: 0 !important
+
 $is-initial
   animation: none
   animation-delay: 0
@@ -169,9 +175,6 @@ $code-block
   background: highlight-background
   margin: 0 article-padding * -1
   padding: 15px article-padding
-  border-style: solid
-  border-color: color-border
-  border-width: 1px 0
   overflow: auto
   color: highlight-foreground
   font-size: font-size
@@ -235,9 +238,6 @@ $line-numbers
       background: highlight-selection
   .gist
     margin: 0 article-padding * -1
-    border-style: solid
-    border-color: color-border
-    border-width: 1px 0
     background: highlight-background
     padding: 15px article-padding 15px 0
     .gist-file
