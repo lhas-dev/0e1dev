@@ -1,7 +1,7 @@
 ---
 title: 'Patterns com React: Render Props'
 date: 2018-09-10 12:40:41
-tags:
+tags: ['react', 'patterns', 'render prop']
 cover: cover.jpg
 ---
 

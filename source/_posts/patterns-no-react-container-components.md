@@ -1,7 +1,7 @@
 ---
 title: 'Patterns com React: Container Components'
 date: 2018-09-30 17:14:00
-tags: ['patterns', 'react', 'container']
+tags: ['react', 'patterns', 'container']
 cover: cover.jpg
 ---
 
@@ -59,10 +59,10 @@ class DashboardContainer extends React.Component {
     };
 
     async componentDidMount() {
-        const products = await axios.get('/api/products'); // vamos usar async/await para facilitar o entendimento
+        const request = await axios.get('/api/products'); // vamos usar async/await para facilitar o entendimento
 
         this.setState({
-            products
+            products: request.data
         });
     }
 
